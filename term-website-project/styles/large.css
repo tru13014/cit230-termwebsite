@@ -1,0 +1,62 @@
+/**********Home page**********/
+
+@media only screen and (min-width: 64rem) {
+    @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {}
+
+    body {
+        width: 1024px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 64rem) {
+        .tours {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 25px;
+        }
+
+        .subheading {
+            color: #423824;
+            font-size: 1.2em;
+            display: inline;
+            flex-direction: row;
+            margin-left: 10%;
+        }
+
+    }
+
+    /**********End Home page**********/
+    /**********Adventures page**********/
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+    }
+
+    /**********End Adventures page**********/
+    /**********Sales page**********/
+    .navigation {
+        left: 0%;
+    }
+
+    /**********End of Sales page**********/
+}
+
+
+
+/**********Contact page**********/
+
+@media only screen and (min-width: 64rem) {
+    .contactus ul {
+        margin-left: 35px;
+        font-size: 1rem;
+    }
+
+    #map {
+        margin-left: -35px;
+    }
+
+}
