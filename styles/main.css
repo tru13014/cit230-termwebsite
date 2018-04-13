@@ -1,0 +1,699 @@
+/**********Home page**********/
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+}
+
+head {
+    font-family: 'Bree Serif', serif;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+    .burger-nav {
+        display: block;
+        margin-left: auto;
+        height: 40px;
+        width: 10%;
+        background: url(images/burger.png) no-repeat;
+        background-color: #7e9c48;
+        cursor: pointer;
+    }
+}
+
+and (-webkit-min-device-pixel-ratio: 2) {}
+
+body {
+    margin: 20px 20px;
+    color: #423824;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    background-color: #f7f0d2;
+    overflow: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Bree Serif", serif;
+}
+
+header img {}
+
+header .subheading {
+    color: #423824;
+    font-family: "Bree Serif", serif;
+    font-size: 1.2em;
+    margin-top: 125px;
+    padding-left: 5px;
+    text-align: right;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #7e9c48;
+    margin-left: 31%;
+    text-align: left
+}
+
+
+nav {
+    font-family: 'Bree Serif', serif;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+#container {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+nav ul li a {
+    text-align: left;
+    display: block;
+    padding: .5rem 2%;
+    color: #d9e0a8;
+    text-decoration: none;
+    border-color: #423824;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:link {
+    color: #d9e0a8;
+    background-color: #7e9c48;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #d9e0a8;
+    background-color: #423824;
+    text-decoration: none;
+}
+
+nav ul li a:active {
+    color: #423824;
+    background-color: #d9e0a8;
+    text-decoration: none;
+    border-color: #d9e0a8;
+    border-top: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+    .active {
+    border: 5px solid #d9e0a8;
+        border-top-width: 5px;
+        border-right-width: 5px;
+        border-bottom-width: 5px;
+        border-left-width: 5px;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-top-color: rgb(217, 224, 168);
+        border-right-color: rgb(217, 224, 168);
+        border-bottom-color: rgb(217, 224, 168);
+        border-left-color: rgb(217, 224, 168);
+        border-image-source: none;
+        border-image-slice: 100%;
+        border-image-width: 1;
+        border-image-outset: 0;
+        border-image-repeat: stretch stretch;
+}
+
+.hide-nav {
+    display: none;
+}
+
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+.welcome {
+    text-align: center;
+    color: #7e9c48;
+}
+
+.welcome h3 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #423824;
+    width: auto;
+    margin-left: 22%;
+    margin-right: 21%;
+    margin-bottom: 25px;
+    background: #b8b093;
+    border-color: #423824;
+    text-align: center;
+}
+
+.call-to-action {
+    display: inline-flex;
+    color: #f7f0d2;
+    background-color: #7e9c48;
+    height: 35px;
+    border-radius: 7px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+main figure img {
+    margin: 0 0 .2rem 2%;
+    width: 100%;
+
+}
+
+figcaption {
+    font-size: 10px;
+    color: #b8b093;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+aside {
+    text-align: center;
+    color: #f7f0d2;
+    background-color: #b8b093;
+    padding: 16px 16px;
+}
+
+footer {
+    color: #f7f0d2;
+    background-color: #7e9c48;
+    padding-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer a {
+    color: #f7f0d2;
+    text-decoration: underline;
+}
+
+/**********End of Home page**********/
+
+/**********Adventure Tours page**********/
+
+.tours h2 {
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+
+.tours p,
+ul {
+    font-size: .8rem
+}
+
+.tours p {
+    margin-left: 5px;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tours ul {
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+.gallery h5 {
+    margin-left: 10px;
+}
+
+.gallery img:hover {
+    border: solid 1px #423824;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #423824;
+    border-right-color: #423824;
+    border-bottom-color: #423824;
+    border-left-color: #423824;
+    /*
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+*/
+    border-image-source: none;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: stretch stretch;
+    box-shadow: 10px 10px 10px #423824;
+    ;
+}
+
+/**********End of Adventure Tours page**********/
+
+/**********Sales page**********/
+
+.bikes {
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    width: 75%;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-bottom: 20px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.bike1 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.bike2 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.bike3 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.bottom-right {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bikes:hover .bike1 {
+    opacity: 0.3;
+}
+
+.bikes:hover .bike2 {
+    opacity: 0.3;
+}
+
+.bikes:hover .bike3 {
+    opacity: 0.3;
+}
+
+.bikes:hover .bottom-right {
+    opacity: 1;
+}
+
+.text {
+    background-color: #423824;
+    color: #f7f0d2;
+    font-size: .8rem;
+    padding: 16px 32px;
+}
+
+
+/**********End of Sales page**********/
+
+/**********Events page**********/
+
+.events h1,
+h2 {
+    text-align: center;
+}
+
+.events h2 {
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.events p {
+    text-align: justify;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.details h3 {
+    color: #f7f0d2;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #423824;
+    background: #423824;
+}
+
+.details p {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid #423824;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #b8b093;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #d9e0a8;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #423824;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #423824;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #b8b093;
+}
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+.form-group {
+    margin-left: 30px;
+    color: #b8b093;
+}
+
+.form-group option {
+    color: #b8b093;
+    background-color: #f7f0d2;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#state {
+    color: #423824;
+    background-color: #b8b093;
+}
+
+@media screen and (max-width: 300px) {
+    .signupbtn {
+        width: 30%;
+    }
+}
+
+/**********End of Events page**********/
+
+/**********Service page**********/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f0d2;
+    color: #423824;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.pricing-table {
+    -webkit-box-shadow: 0px 0px 3px #423824;
+    box-shadow: 0px 0px 3px #423824;
+    display: block;
+    margin: 30px 10px;
+    width: 250px;
+}
+
+.featured {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.pricing-table-header {
+    background: #423824;
+    background: -moz-linear-gradient(top, #423824 0%, #b8b093 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #423824), color-stop(100%, #b8b093));
+    background: -webkit-linear-gradient(top, #423824 0%, #b8b093 100%);
+    background: -o-linear-gradient(top, #423824 0%, #b8b093 100%);
+    background: -ms-linear-gradient(top, #423824 0%, #b8b093 100%);
+    background: linear-gradient(to bottom, #423824 0%, #b8b093 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#423824', endColorstr='#b8b093', GradientType=0);
+    background-color: #b8b093;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 16px;
+    text-align: center;
+}
+
+.pricing-table-header h1 {
+    color: #f7f0d2;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.pricing-table-content {
+    background-color: #d9e0a8;
+}
+
+.pricing-table-content ul {
+    list-style: none;
+}
+
+.pricing-table-content ul li {
+    border-bottom: 1px solid #423824;
+    font-size: 14px;
+    padding: 16px 56px;
+}
+
+.pricing-table-footer {
+    background-color: #b8b093;
+    -webkit-border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+    padding: 16px 0;
+}
+
+
+.pricing-table-footer {
+    text-align: center;
+}
+
+.pricing-table-footer p {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.pricing-table-footer a {
+    background: #b8b093;
+    background: -moz-linear-gradient(top, #b8b093 0%, #423824 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8b093), color-stop(100%, #423824));
+    background: -webkit-linear-gradient(top, #b8b093 0%, #423824 100%);
+    background: -o-linear-gradient(top, #b8b093 0%, #423824 100%);
+    background: -ms-linear-gradient(top, #b8b093 0%, #423824 100%);
+    background: linear-gradient(to bottom, #b8b093 0%, #423824 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8b093', endColorstr='#423824', GradientType=0);
+    background-color: #b8b093;
+    border: 1px solid #423824;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #f7f0d2;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/**********End of Service page**********/
+
+/**********Contact Us page**********/
+
+.contactus h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.contactus ul {
+    list-style-type: none;
+}
+
+#map {
+    width: 100%;
+    height: 250px;
+    background-color: #f7f0d2;
+    margin-bottom: 15px;
+}
+
+form {
+    color: #423824;
+    font-size: 1rem;
+    margin: .5rem;
+}
+
+fieldset {
+    padding: .8rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    color: #423824;
+    display: block;
+    padding: .75rem;
+}
+
+input {
+    color: #423824;
+    background-color: #b8b093;
+    display: block;
+    padding-bottom: .5rem;
+}
+
+textarea {
+    color: #423824;
+    background-color: #b8b093;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+input.submitbtn {
+    color: #d9e0a8;
+    width: auto;
+    font-size: 1.2rem;
+    padding: .5rem;
+    margin: 1rem 0rem;
+    background: #7e9c48;
+    box-shadow: 2px 2px 10px #423824;
+}
+
+a.submitbtn {
+    text-decoration: none;
+}
+
+/**********End of Contact Us page**********/
+
+/**********Thank You page**********/
+
+h1.thanks {
+    text-align: center;
+    color: #423824;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: dotted 2px #423824;
+    border-bottom: dotted 2px #423824;
+
+}
+
+.flexcontainer {
+    display: inline;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    width: 10%;
+    align-content: center;
+}
+
+.thanks {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/**********End of Thank You page**********/
+
+/*
+    footer-bar p {
+        text-align: center;
+        font-size: 14px;
+        color: #aeceff;
+        line-height: 20px;
+        background-color: #2c4d7f;
+        margin: 0;
+        padding: .5rem;
+    }*/

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Mountain Spoke - Services</title>
+
+    <meta name="author" content="Marlene Trujillo">
+    <meta name="description" content="Term website project">
+
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Sans-Serif" rel="stylesheet">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+
+    <style type="text/css" media="screen">
+        <SCRIPT LANGUAGE="JavaScript"><script type="text/javascript" src="theMountainSpokeassignment/scripts/modernizr.js"></script>
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header">
+            <img src="images/logo-draft2rev2.png" width="250" alt="The Mountain Spoke logo image">
+        </div>
+
+        <div class="subheading">Think different. Think bicycle.</div>
+
+    </header>
+
+    <nav id="clearfix" class="container">
+
+        <button onclick="toggleMenu()">&#9776;</button>
+
+        <ul id="nav-ul" class="hide-nav">
+            <li class="navItem"><a href="index.html">Home</a></li>
+            <li class="navItem"><a href="adventure-tours.html">Adventures</a></li>
+            <li class="navItem"><a href="events.html">Events</a></li>
+            <li class="navItem"><a href="sales.html">Sales</a></li>
+            <li class="navItem"><a href="service.html">Service</a></li>
+            <li class="navItem"><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <section class="service">
+
+            <h1>We Make Sure Your Wheels Keep Turning</h1>
+            <p>Our commitment to excellence and our 100% satisfaction guarantee make us the best bike shop in town.</p>
+
+            <div class="priceContainer">
+                <div class="pricing-table">
+                    <div class="pricing-table-header">
+                        <h1>Drive Train</h1>
+                    </div>
+
+                    <div class="pricing-table-content">
+                        <ul>
+                            <li><strong>Install</strong> Chain</li>
+                            <li><strong>Adjust</strong> Derailleurs</li>
+                            <li><strong>Install</strong> Cable</li>
+                            <li><strong>Clean</strong> Drivetrain</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-table-footer">
+                        <h2><sup>$</sup>125</h2>
+                        <a href="#">Order</a>
+                    </div>
+                </div>
+
+                <div class="pricing-table featured">
+                    <div class="pricing-table-header">
+                        <h1>Overhaul</h1>
+                    </div>
+
+                    <div class="pricing-table-content">
+                        <ul>
+                            <li><strong>Super</strong> Tune-up</li>
+                            <li><strong>Adjust</strong> Breaks</li>
+                            <li><strong>Install</strong> Brake Cables</li>
+                            <li><strong>Install</strong> Gyro Cable</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-table-footer">
+                        <h2><sup>$</sup>200</h2>
+                        <a href="#">Order</a>
+                    </div>
+                </div>
+
+                <div class="pricing-table">
+                    <div class="pricing-table-header">
+                        <h1>Wheels</h1>
+                    </div>
+
+                    <div class="pricing-table-content">
+                        <ul>
+                            <li><strong>Replace</strong> Spokes</li>
+                            <li><strong>Set-Up</strong> Tubeless Tire</li>
+                            <li><strong>Adjust</strong> Cones</li>
+                            <li><strong>Clean</strong> Rear Hub</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-table-footer">
+                        <h2><sup>$</sup>75</h2>
+                        <a href="#">Order</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <aside>
+            <b>The Mountain Spoke</b><br> 3950 Valley Commons Drive<br> Bozeman, MT 59715<br> (406) 555-5555 <br> info@themountainspoke.com
+            <br>
+        </aside>
+
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <a href="https://www.youtube.com/watch?v=BwVBjO7ARxE&feature=youtu.be&hd=1">Video Overview">Terms of Use</a> | <a href="references.docx">References</a> | <span id='date'></span>
+        </p>
+
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+
+    <script src="scripts/current-date.js"></script>
+
+    <script>
+        var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHREF = urlArray[urlArray.length - 1];
+
+        if (pageHREF !== "") {
+            var menu = document.querySelectorAll('ul#nav-ul li a');
+            var i;
+            for (i = 0; i < menu.length; i++) {
+                var currentURL = (menu[i].getAttribute("href"));
+                menu[i].parentNode.className = "";
+                if (currentURL === pageHREF) {
+                    menu[i].parentNode.className = "active";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

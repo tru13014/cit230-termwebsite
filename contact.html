@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Mountain Spoke - Contact Us</title>
+
+    <meta name="author" content="Marlene Trujillo">
+    <meta name="description" content="Term website project">
+
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Sans-Serif" rel="stylesheet">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+
+    <style type="text/css" media="screen">
+        <SCRIPT LANGUAGE="JavaScript">
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header">
+            <img src="images/logo-draft2rev2.png" width="250" alt="The Mountain Spoke logo image">
+        </div>
+
+        <div class="subheading">Think different. Think bicycle.</div>
+
+    </header>
+
+    <nav id="clearfix" class="container">
+
+        <button onclick="toggleMenu()">&#9776;</button>
+
+        <ul id="nav-ul" class="hide-nav">
+            <li class="navItem"><a href="index.html">Home</a></li>
+            <li class="navItem"><a href="adventure-tours.html">Adventures</a></li>
+            <li class="navItem"><a href="events.html">Events</a></li>
+            <li class="navItem"><a href="sales.html">Sales</a></li>
+            <li class="navItem"><a href="service.html">Service</a></li>
+            <li class="navItem"><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+
+    <main>
+
+        <section class="contactus">
+
+            <h2>Contact Us</h2>
+            <br>
+            <ul>
+                <li>For <strong>Tours</strong>: &nbsp;&nbsp;&nbsp; (406) 555-5555</li>
+                <li>For <strong>Sales</strong>: &nbsp;&nbsp;&nbsp; (406) 555-5566</li>
+                <li>For <strong>Service</strong>: &nbsp;(406) 555-5577</li>
+                <br>
+                <li>Email us at:</li>
+                <li>info@themountainspoke.com</li>
+                <br>
+                <li>Correspondence:</li>
+                <li>3950 Valley Commons Drive</li>
+                <li>Bozeman, MT 59715</li>
+            </ul>
+
+            <div id="map"></div>
+
+            <script>
+                function initMap() {
+                    var uluru = {
+                        lat: 45.672,
+                        lng: -111.091
+                    };
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 7,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyD-gfKxNa4pqUuAzeT0hNIvkOHiOmSM77o
+&callback=initMap">
+            </script>
+
+        </section>
+
+
+        <h2>We'd like to hear from you!</h2>
+        <form id="tourInfo" action="thanks.html" method="get" enctype="multipart/form-data" name="infoRequest">
+            <fieldset>
+                <legend>
+                    <span>Personal Information</span>
+                </legend>
+
+                <label>
+                    <span>
+                        Full Name:
+                        <input name="fullName" value="" placeholder="First and last name" pattern="[a-zA-Z -]{5,40}" required="" type="text">
+                    </span>
+                </label>
+
+                <label>
+                    <span>
+                        Email:
+                        <input name="email" value="" placeholder="youremail@email.com" type="email">
+                    </span>
+                </label>
+
+                <label>
+                    <span>
+                        Phone:
+                        <input name="phone" value="" placeholder="555-555-5555" pattern="[0-9]{10,11}" required="" type="tel">
+                    </span>
+                </label>
+
+                <label>
+                    <span>
+                        Zip code:
+                        <input name="zip" value="" placeholder="12345" required="" type="zip">
+                    </span>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <span>Tour Information</span>
+                </legend>
+
+                <label>
+                    <span>
+                        Planned Tour date:
+                        <input name="tourDate" value="" required="" type="date">
+                    </span>
+                </label>
+
+                <label>
+                    <span>
+                        Type your question:
+                        <textarea name="additionalinfo" rows="4" cols="35"></textarea>
+                    </span>
+                </label>
+
+            </fieldset>
+
+            <input class="submitbtn" value="Submit" type="submit">
+            <input name="redirect" value="thanks.html" type="hidden">
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <aside>
+            <b>The Mountain Spoke</b><br> 3950 Valley Commons Drive<br> Bozeman, MT 59715<br> (406) 555-5555 <br> info@themountainspoke.com
+            <br>
+        </aside>
+
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <a href="https://www.youtube.com/watch?v=BwVBjO7ARxE&feature=youtu.be&hd=1">Video Overview</a> | <a href="references.docx">References</a> | <span id='date'></span>
+        </p>
+
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+
+    <script src="scripts/current-date.js"></script>
+
+</body>
+
+<script>
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length - 1];
+
+    if (pageHREF !== "") {
+        var menu = document.querySelectorAll('ul#nav-ul li a');
+        var i;
+        for (i = 0; i < menu.length; i++) {
+            var currentURL = (menu[i].getAttribute("href"));
+            menu[i].parentNode.className = "";
+            if (currentURL === pageHREF) {
+                menu[i].parentNode.className = "active";
+            }
+        }
+    }
+</script>
+    
+</html>
